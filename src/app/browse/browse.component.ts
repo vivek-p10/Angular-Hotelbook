@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { HOTELS } from '../hotel-list';
+import { Hotel } from '../hotel';
+
 
 @Component({
   selector: 'app-browse',
@@ -6,6 +9,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./browse.component.css']
 })
 export class BrowseComponent implements OnInit {
+
+  hotels = HOTELS;
+  hotel = Hotel;
+
 
   constructor() { }
 

@@ -22,7 +22,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     LoginComponent,
     SignupComponent,
     WelcomeComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
