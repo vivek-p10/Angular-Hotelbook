@@ -1,9 +1,13 @@
 <div class="jumbotron">
-<div class="row">
-  <div class="col-sm-4" id="tnail" *ngFor="let hotel of hotels" >
-   <img class="img-responsive img-thumbnail" src = {{hotel.link}} alt={{hotel.name}}/>
-  </div>
+  <div class="row">
+    <div class="col-sm-4" id="tnail" *ngFor="let hotel of hotels">
+      <img class="img-responsive img-thumbnail" src= {{hotel.link}} alt={{hotel.name}}/>
+      <div class="text-block">
+        <h5>{{hotel.name}}</h5>
+        <h6>{{hotel.place}}</h6>
+      </div>
+    </div>
 
-</div>
+  </div>
 
 </div>
