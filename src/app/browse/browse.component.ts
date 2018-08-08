@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HOTELS } from '../hotel-list';
+import { HotelService } from '../hotel.service';
 import { Hotel } from '../hotel';
 
 
@@ -10,13 +10,21 @@ import { Hotel } from '../hotel';
 })
 export class BrowseComponent implements OnInit {
 
-  hotels = HOTELS;
-  hotel = Hotel;
+  hotels: Hotel[];
+
+  hotel: Hotel;
 
 
-  constructor() { }
+  constructor(private hotelService: HotelService) { }
+  getHotels(): void {
+    this.hotelService.getHotels()
+        .subscribe(hotels => this.hotels = hotels);
+  }
+
+
 
   ngOnInit() {
+    this.getHotels();
   }
 
 }

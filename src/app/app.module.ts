@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { FooterComponent } from './footer/footer.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { DetailsComponent } from './details/details.component';
 
 
 
@@ -23,6 +24,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     SignupComponent,
     WelcomeComponent,
     FooterComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
       { path: 'welcome', component: WelcomeComponent },
       { path: 'browse', component: BrowseComponent },
       { path: 'login', component: LoginComponent },
-      { path: 'signup', component: SignupComponent }
+      { path: 'signup', component: SignupComponent },
+      { path: 'details', component: DetailsComponent }
     ])
   ],
   providers: [],
