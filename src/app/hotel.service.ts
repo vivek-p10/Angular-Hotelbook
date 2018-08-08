@@ -9,6 +9,8 @@ import { Observable, of } from 'rxjs';
 })
 export class HotelService {
 
+  selectedHotel: Hotel;
+
   constructor() { }
   getHotels(): Observable<Hotel[]> {
     return of(HOTELS);

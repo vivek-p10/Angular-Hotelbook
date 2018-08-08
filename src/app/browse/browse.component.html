@@ -1,8 +1,8 @@
 <div class="jumbotron">
   <div class="row">
     <div class="col-sm-4" id="tnail" *ngFor="let hotel of hotels">
-      <img class="img-responsive img-thumbnail" src= {{hotel.link}} alt={{hotel.name}}/>
-      <a class="nav-link" [routerLink]="['/details']">
+      <img class="img-responsive img-thumbnail" [src]= 'hotel.link' [title]='hotel.name' alt={{hotel.name}}/>
+      <a  (click)='getHotel(hotel)' >
       <div class="text-block">
         <h5>{{hotel.name}}</h5>
         <h6>{{hotel.place}}</h6>
