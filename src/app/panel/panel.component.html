@@ -4,28 +4,24 @@
       {{selectedHotel.name}}
     </div>
     <div class="panel-body ">
-      <!-- <div class="inline-block">
-        <img class="img-responsive img-thumbnail" src="../../assets/images/deluxe-pool-view-room.jpg">
-      </div>
-      <div class="inline-block">
-        <img class="img-responsive img-thumbnail" src="../../assets/images/doubleroom.jpg">
-      </div>
-      <div class="inline-block">
-        <img class="img-responsive img-thumbnail" src="../../assets/images/suiteroom.jpg">
-      </div> -->
       <div class="row type">
-        <div class="inline col-sm-4" (click)="room(1);">Single room</div>
-        <div class="inline col-sm-4" (click)="room(2);">Double room</div>
+        <div class="inline col-sm-4" (click)="room(1);">Single</div>
+        <div class="inline col-sm-4" (click)="room(2);">Double</div>
         <div class="inline col-sm-4" (click)="room(3);">Suite</div>
       </div>
       <div class="row" id="detail">
-        <div class="block col-sm-6" id="roomdetails" *ngIf="click">
+        <div class="block col-sm-6" id="roomdetails" *ngIf="id">
 
         </div>
-        <div class="block col-sm-6" id="details" *ngIf="click">
+        <div class="block col-sm-6" id="details" *ngIf="id">
+          <p>Room Description. Single rooms is a bright and cosy room featuring cable TV, a work desk and a private bathroom
+            with shower. Room Facilities: City view, TV, Telephone, Cable channels, Desk, Sitting area, Hardwood/Parquet
+            floors, Shower, Toilet, Bathroom, Wake-up service.</p>
+        </div>
+        <div class="block col-sm-12" id="select" *ngIf="!id">
 
         </div>
-      </div>
       </div>
     </div>
   </div>
+</div>

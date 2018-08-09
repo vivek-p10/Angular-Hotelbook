@@ -3,13 +3,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { BrowseComponent} from './browse/browse.component';
+import { BrowseComponent } from './browse/browse.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { FooterComponent } from './footer/footer.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { DetailsComponent } from './details/details.component';
 import { PanelComponent } from './panel/panel.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -30,8 +31,9 @@ import { PanelComponent } from './panel/panel.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot([
-      { path: '', redirectTo: 'welcome' , pathMatch: 'full' },
+      { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: 'welcome', component: WelcomeComponent },
       { path: 'browse', component: BrowseComponent },
       { path: 'login', component: LoginComponent },

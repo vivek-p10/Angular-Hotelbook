@@ -17,17 +17,17 @@ export class BrowseComponent implements OnInit {
   selectedHotel: Hotel;
 
 
-  constructor(public hotelService: HotelService, private router: Router ) { }
+  constructor(public hotelService: HotelService, private router: Router) { }
   getHotels(): void {
     this.hotelService.getHotels()
-        .subscribe(hotels => this.hotels = hotels);
+      .subscribe(hotels => this.hotels = hotels);
   }
-  getHotel(hotel: Hotel, err ): void {
+  getHotel(hotel: Hotel, err): void {
     if (err) {
-    throw err;
+      throw err;
     } else {
-    sessionStorage.setItem('currentHotel', JSON.stringify(hotel));
-    this.router.navigate(['/details']);
+      sessionStorage.setItem('currentHotel', JSON.stringify(hotel));
+      this.router.navigate(['/details']);
     }
   }
 

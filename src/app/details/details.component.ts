@@ -22,7 +22,6 @@ export class DetailsComponent implements OnInit {
   selectedHotel: Hotel;
   constructor(private renderer: Renderer2) { }
   change() {
-    console.log('change');
     const parent: HTMLElement = document.getElementById('bg');
     this.renderer.setStyle(parent, 'background-image', 'url(' + this.selectedHotel.link + ')');
   }
@@ -30,7 +29,6 @@ export class DetailsComponent implements OnInit {
 
   getSelectedHotel(): void {
     this.selectedHotel = JSON.parse(sessionStorage.getItem('currentHotel'));
-    console.log(this.selectedHotel);
   }
 
 
