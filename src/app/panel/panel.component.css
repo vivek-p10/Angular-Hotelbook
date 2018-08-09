@@ -7,9 +7,9 @@
 
 .panel-heading {
     padding: 0.8rem 1rem;
-    border-top-left-radius: 0.3rem;
+    border-top-left-radius: 0.5rem;
     text-align: center;
-    border-top-right-radius: 0.3rem;
+    border-top-right-radius: 0.5rem;
     background-color: black !important;
     color: white !important;
     z-index: 10;
@@ -19,10 +19,9 @@
 }
 
 .panel-group {
-    width: 50%;
-    position: relative;
-    left: 26%;
-    top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     height: 100%;
     max-height: 34rem;
 
@@ -32,7 +31,10 @@
     margin-bottom: 0;
     border: 5px solid black;
     height: 100%;
+    width: 70%;
     border-radius: 1.5rem;
+    max-width: 50rem;
+
 }
 
 
@@ -89,12 +91,17 @@ div.inline:hover{
 
 .row #details {
     width: 50%;
-    height: 90%;
     margin: 0px 0px;
+    align-self: center;
+    justify-self: center;
 }
 
-#details > p:nth-child(1) {
-    position: relative;
-    top: 25%;
+div .bttn {
+    width: -moz-available;
+    display: flex;
+    justify-content: center;
 }
-    
+
+button.btn {
+}
+
