@@ -11,6 +11,6 @@ export const HOTELS: Hotel[] = [
     { id: 8, name: 'Qasr Al Sahab', place: 'UAE', link: '../assets/images/qasr.JPG' },
     { id: 9, name: 'Waldorf Astoria', place: 'Ras Al Khaima', link: '../assets/images/waldorf.jpg' },
     { id: 10, name: 'Al Etihad Towers', place: 'Jumeira', link: '../assets/images/etihad.jpg' },
-    { id: 11, name: 'Hilton Capital Gran', place: 'Abu Dhabi', link: '../assets/images/hilton.jpg' },
+    { id: 11, name: 'Hilton Capital Grand', place: 'Abu Dhabi', link: '../assets/images/hilton.jpg' },
     { id: 12, name: 'Armani Hotel', place: 'Dubai', link: '../assets/images/armani.jpg' }
 ];

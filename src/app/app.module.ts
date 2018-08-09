@@ -9,6 +9,7 @@ import { SignupComponent } from './signup/signup.component';
 import { FooterComponent } from './footer/footer.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { DetailsComponent } from './details/details.component';
+import { PanelComponent } from './panel/panel.component';
 
 
 
@@ -25,6 +26,7 @@ import { DetailsComponent } from './details/details.component';
     WelcomeComponent,
     FooterComponent,
     DetailsComponent,
+    PanelComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,87 @@
+.panel-body {
+    color: white;
+    height: 90%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    /* opacity: 0.6; */
+
+}
+
+.panel-default {
+    border-color: #ddd;
+    height: 400px;
+}
+
+.panel-heading {
+    padding: 0.8rem 1rem;
+    border-top-left-radius: 0.3rem;
+    text-align: center;
+    border-top-right-radius: 0.3rem;
+    background-color: black !important;
+    color: white !important;
+    z-index: 10;
+    height: 10%;
+    /* opacity: 0.9; */
+
+}
+
+.panel-group {
+    width: 50%;
+    position: relative;
+    left: 26%;
+    height: 100%;
+}
+
+.panel-group .panel {
+    margin-bottom: 0;
+    border: 5px solid black;
+    height: 100%;
+    border-radius: 1.5rem;
+}
+
+
+div.inline {
+    text-align: center;
+    padding-top: 0.6rem;
+    border: 1.5px solid #090909;
+    border-radius: 0.1rem;
+    background-color: black;
+    opacity: 0.9;
+}
+
+div.inline:hover{
+    opacity:1;
+    cursor: pointer;
+}
+
+
+
+#roomdetails {
+    opacity: 0.95;
+    margin-bottom:0rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 1rem;
+    border-right: 0.4rem solid rgba(0,0,0,0.95);
+}
+
+#detail {
+    height: 90%;
+    opacity: 0.9;
+    margin-bottom:0rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.row {
+    width:inherit;
+    height: 10%;
+    margin: 0px 0px;
+}
+
+.row #detail {
+    width: 50%;
+    height: 90%;
+    margin: 0px 0px;
+}
+    

@@ -1,3 +1,4 @@
+import { Url } from 'url';
 
 export interface Hotel {
     id: number;

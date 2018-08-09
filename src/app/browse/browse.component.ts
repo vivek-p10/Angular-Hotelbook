@@ -22,10 +22,13 @@ export class BrowseComponent implements OnInit {
     this.hotelService.getHotels()
         .subscribe(hotels => this.hotels = hotels);
   }
-  getHotel(hotel: Hotel): void {
-    console.log(hotel.name);
-    this.hotelService.selectedHotel = hotel;
+  getHotel(hotel: Hotel, err ): void {
+    if (err) {
+    throw err;
+    } else {
+    sessionStorage.setItem('currentHotel', JSON.stringify(hotel));
     this.router.navigate(['/details']);
+    }
   }
 
 

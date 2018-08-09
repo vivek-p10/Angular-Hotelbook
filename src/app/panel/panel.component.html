@@ -1,0 +1,31 @@
+<div class="panel-group" id="panel-body">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      {{selectedHotel.name}}
+    </div>
+    <div class="panel-body ">
+      <!-- <div class="inline-block">
+        <img class="img-responsive img-thumbnail" src="../../assets/images/deluxe-pool-view-room.jpg">
+      </div>
+      <div class="inline-block">
+        <img class="img-responsive img-thumbnail" src="../../assets/images/doubleroom.jpg">
+      </div>
+      <div class="inline-block">
+        <img class="img-responsive img-thumbnail" src="../../assets/images/suiteroom.jpg">
+      </div> -->
+      <div class="row type">
+        <div class="inline col-sm-4" (click)="room(1);">Single room</div>
+        <div class="inline col-sm-4" (click)="room(2);">Double room</div>
+        <div class="inline col-sm-4" (click)="room(3);">Suite</div>
+      </div>
+      <div class="row" id="detail">
+        <div class="block col-sm-6" id="roomdetails" *ngIf="click">
+
+        </div>
+        <div class="block col-sm-6" id="details" *ngIf="click">
+
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
