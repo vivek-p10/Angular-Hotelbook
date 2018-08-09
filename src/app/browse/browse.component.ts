@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 export class BrowseComponent implements OnInit {
 
   hotels: Hotel[];
+  path = '../assets/images/';
 
   hotel: Hotel;
   selectedHotel: Hotel;
